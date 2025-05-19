@@ -15,6 +15,26 @@ A Helm chart for deploying the Service Foundry Builder as a Kubernetes Job. This
 - AWS CLI or Azure CLI configured
 - Docker installed
 
+## How to update the chart
+
+Update the chart version in `Chart.yaml` and the image tag in `values.yaml` to the latest version.
+
+```bash
+helm package service-foundry-builder
+
+helm repo index . --url https://nsalexamy.github.io/helm-charts
+
+CHART_VERSION=$(grep 'version:' service-foundry-builder/Chart.yaml | awk '{print $2}')
+
+git add .
+
+git commit -m "Update service-foundry-builder chart to version X.Y.Z"
+
+git tag -a vX.Y.Z -m "Release version X.Y.Z"
+
+git push origin main
+```
+
 ## 🚀 Installation
 
 ### 1. Add Helm Repository
