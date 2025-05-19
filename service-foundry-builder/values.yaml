@@ -13,7 +13,7 @@ image:
 #  pullPolicy: IfNotPresent
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "0.1.0"
+  tag: "0.1.1"
 
 # This is for the secrets for pulling an image from a private repository more information can be found here: https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/
 imagePullSecrets: []
@@ -148,6 +148,9 @@ aws:
   awsSecretName: "aws-secret"
   # eksClusterName: "young-eks"
 azure: {}
+
+# command can be 'deploy' or 'clean'
+command: deploy
 
 #extraEnvs: []
 extraEnvs:

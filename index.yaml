@@ -3,7 +3,17 @@ entries:
   service-foundry-builder:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-05-15T11:11:42.250943-07:00"
+    created: "2025-05-19T07:55:48.494157-07:00"
+    description: A Helm chart for Kubernetes
+    digest: f2874068a503afdda02b67bc51bc3cd6b5e03c8fe6a0137cbc59c1b445d36c29
+    name: service-foundry-builder
+    type: application
+    urls:
+    - https://nsalexamy.github.io/helm-charts/service-foundry-builder-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-05-19T07:55:48.492845-07:00"
     description: A Helm chart for Kubernetes
     digest: d39cabc49cc13e5c1840ab225db81d6fdd295d48b34aced64bc905b8b64cf209
     name: service-foundry-builder
@@ -11,4 +21,4 @@ entries:
     urls:
     - https://nsalexamy.github.io/helm-charts/service-foundry-builder-0.1.0.tgz
     version: 0.1.0
-generated: "2025-05-15T11:11:42.249939-07:00"
+generated: "2025-05-19T07:55:48.492194-07:00"
