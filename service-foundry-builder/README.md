@@ -5,8 +5,9 @@ A Helm chart for deploying the Service Foundry Builder as a Kubernetes Job. This
 ## 📦 Features
 - Deploy as a Kubernetes Job
 - Configurable environment variables
-- S3 storage for Docker context
-- Support for multi-architecture builds
+
+[//]: # (- S3 storage for Docker context)
+[//]: # (- Support for multi-architecture builds)
 
 ## 🛠️ Prerequisites
 - Kubernetes 1.24+
@@ -40,7 +41,8 @@ kubectl -n service-foundry create secret generic aws-secret \
 
 ### 4. Create service-foundry-github-ssh Secret
 ```bash
-kubectl -n service-foundry create secret generic service-foundry-github-ssh --from-file=./id_rsa --from-file=./id_rsa.pub
+kubectl -n service-foundry create secret generic service-foundry-github-ssh \
+  --from-file=./id_rsa --from-file=./id_rsa.pub
 ```
 
 ### 5. Create service-foundry-config-files Secret
@@ -56,8 +58,6 @@ kubectl create secret generic service-foundry-config-files \
 helm install service-foundry-builder service-foundry/service-foundry-builder \
   --namespace service-foundry \
   --version 0.1.0 \
-  
-
 ```
 
 ## ✅ Uninstalling the Chart

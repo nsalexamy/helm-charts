@@ -39,7 +39,10 @@ spec:
             - name: GENERATOR_NSA2_SSH_KEY_PATH
               value: /opt/nsa2/github-ssh/id_rsa
             {{ toYaml .Values.extraEnvs | nindent 12 }}
-
+            {{- with .Values.command }}
+            - name: COMMAND
+              value: {{ . | quote }}
+            {{- end }}
           envFrom: {{ toYaml .Values.envFrom | nindent 12 }}
 
           {{- with .Values.resources }}
