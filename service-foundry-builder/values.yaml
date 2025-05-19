@@ -146,8 +146,13 @@ affinity: {}
 aws:
   # AWS_REGION, AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, AWS_ACCOUNT_ID
   awsSecretName: "aws-secret"
-  # eksClusterName: "young-eks"
-azure: {}
+  eksClusterName: "young-eks"
+  envs: []
+#  envs:
+#    - name: EKS_CLUSTER_NAME
+#      value: young-eks
+azure:
+  envs: []
 
 # command can be 'deploy' or 'clean'
 command: deploy
