@@ -43,6 +43,14 @@ spec:
             - name: COMMAND
               value: {{ . | quote }}
             {{- end }}
+            # AWS environment variables
+            {{ toYaml .Values.aws.envs | nindent 12 }}
+#            {{- with .Values.aws.eksClusterName }}
+#            - name: EKS_CLUSTER_NAME
+#              value: {{ . | quote }}
+#            {{- end }}
+            # Azure environment variables
+            {{ toYaml .Values.azure.envs | nindent 12 }}
           envFrom: {{ toYaml .Values.envFrom | nindent 12 }}
 
           {{- with .Values.resources }}

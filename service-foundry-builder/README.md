@@ -28,9 +28,9 @@ CHART_VERSION=$(grep 'version:' service-foundry-builder/Chart.yaml | awk '{print
 
 git add .
 
-git commit -m "Update service-foundry-builder chart to version X.Y.Z"
+git commit -m "Update service-foundry-builder chart to version $CHART_VERSION"
 
-git tag -a vX.Y.Z -m "Release version X.Y.Z"
+git tag -a v${CHART_VERSION} -m "Release version $CHART_VERSION"
 
 git push origin main
 ```
