@@ -30,7 +30,7 @@ git add .
 
 git commit -m "Update service-foundry-builder chart to version $CHART_VERSION"
 
-git tag -a vX.Y.Z -m "Release version $CHART_VERSION"
+git tag -a v${CHART_VERSION} -m "Release version $CHART_VERSION"
 
 git push origin main
 ```
