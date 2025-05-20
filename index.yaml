@@ -3,9 +3,9 @@ entries:
   service-foundry-builder:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-05-19T18:54:55.076146-07:00"
+    created: "2025-05-19T19:06:02.876749-07:00"
     description: A Helm chart for Kubernetes
-    digest: 835227f40f98f60a71c3f6f696d4b20ac77c767f211f9c8d72527db78c8dd8fe
+    digest: 1cd242bc6b2823a832d37b60dffb62509c21d93e41b20fff7a4688bd37ad9552
     name: service-foundry-builder
     type: application
     urls:
@@ -13,7 +13,7 @@ entries:
     version: 0.1.4
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-05-19T18:54:55.075836-07:00"
+    created: "2025-05-19T19:06:02.876514-07:00"
     description: A Helm chart for Kubernetes
     digest: 90657ce7bcd332cc78aa70f9c034e047565e8a6d6c8059f4a5cc6a558da41006
     name: service-foundry-builder
@@ -23,7 +23,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-05-19T18:54:55.074484-07:00"
+    created: "2025-05-19T19:06:02.87609-07:00"
     description: A Helm chart for Kubernetes
     digest: b878898d947292e3c33aa26c811f4f415d4bb689178d63c6e734d188950768e1
     name: service-foundry-builder
@@ -33,7 +33,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-05-19T18:54:55.073595-07:00"
+    created: "2025-05-19T19:06:02.87436-07:00"
     description: A Helm chart for Kubernetes
     digest: f2874068a503afdda02b67bc51bc3cd6b5e03c8fe6a0137cbc59c1b445d36c29
     name: service-foundry-builder
@@ -43,7 +43,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-05-19T18:54:55.072983-07:00"
+    created: "2025-05-19T19:06:02.873807-07:00"
     description: A Helm chart for Kubernetes
     digest: d39cabc49cc13e5c1840ab225db81d6fdd295d48b34aced64bc905b8b64cf209
     name: service-foundry-builder
@@ -51,4 +51,4 @@ entries:
     urls:
     - https://nsalexamy.github.io/helm-charts/service-foundry-builder-0.1.0.tgz
     version: 0.1.0
-generated: "2025-05-19T18:54:55.072367-07:00"
+generated: "2025-05-19T19:06:02.873148-07:00"
