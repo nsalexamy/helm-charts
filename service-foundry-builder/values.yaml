@@ -13,7 +13,7 @@ image:
 #  pullPolicy: IfNotPresent
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: 0.1.5
+  tag: 0.1.6
 
 # This is for the secrets for pulling an image from a private repository more information can be found here: https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/
 imagePullSecrets: []
@@ -173,9 +173,13 @@ extraEnvs:
 
 envFrom:
   - secretRef:
+      name: service-foundry-builder-secret
+  - configMapRef:
+      name: service-foundry-builder-configmap
+  - secretRef:
       name: aws-secret
   - configMapRef:
-      name: aws-config
+      name: aws-configmap
 
 
 
