@@ -30,7 +30,7 @@ do
 #    a) AWS_ACCOUNT_ID="${OPTARG}" ;;
     r) AWS_REGION="${OPTARG}" ;;
     c) ECR_NAME="${OPTARG}" ;;
-    t) IMAGE_TAG="${OPTARG}" ;;
+    t) TAG="${OPTARG}" ;;
     h) usage ;;
     ?) usage ;;
   esac
@@ -39,13 +39,13 @@ done
 
 
 # check all arguments are provided
-if [ -z "${AWS_REGION}" ] || [ -z "${ECR_NAME}" ] || [ -z "${IMAGE_TAG}" ]; then
+if [ -z "${AWS_REGION}" ] || [ -z "${ECR_NAME}" ] || [ -z "${TAG}" ]; then
   echo "All arguments are required"
   usage
 fi
 
 
-CHART_VERSION="${IMAGE_TAG}"
+CHART_VERSION="${TAG}"
 REPOSITORY="${ECR_NAME}/service-foundry-builder"
 
 for chart in "${all_charts[@]}"; do

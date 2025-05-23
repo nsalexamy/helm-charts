@@ -48,7 +48,7 @@ helm repo update
 kubectl create namespace service-foundry
 ```
 
-### 3. Create aws-secret Secret
+### 3. Create aws-secret Secret and aws-config ConfigMap
 
 
 ```bash
@@ -57,6 +57,15 @@ kubectl -n service-foundry create secret generic aws-secret \
   --from-literal=AWS_ACCOUNT_ID=$AWS_ACCOUNT_ID \
   --from-literal=AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY \
   --from-literal=AWS_REGION=$AWS_REGION
+```
+
+```bash
+[,terminal]
+----
+EKS_CLUSTER_NAME="your-eks-cluster-name"
+kubectl -n service-foundry create configmap aws-config \
+  --from-literal=EKS_CLUSTER_NAME=$EKS_CLUSTER_NAME
+----
 ```
 
 ### 4. Create service-foundry-github-ssh Secret
