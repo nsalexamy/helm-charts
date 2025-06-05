@@ -73,6 +73,8 @@ for chart in "${all_charts[@]}"; do
   git tag -a v${CHART_VERSION} -m "Release version $CHART_VERSION"
 
   git push origin main
+  git push origin v${CHART_VERSION}
+
 done
 
 echo "Merge the changes of main branch to the ph-pages branch on Github "
