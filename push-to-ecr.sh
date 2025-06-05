@@ -3,6 +3,7 @@ set -e
 
 all_charts=(
     "service-foundry-builder"
+    "react-o11y-app"
 )
 
 usage() {

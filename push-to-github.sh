@@ -3,6 +3,7 @@ set -e
 
 all_charts=(
     "service-foundry-builder"
+    "react-o11y-app"
 )
 
 usage() {
@@ -21,7 +22,7 @@ usage() {
 
 GITHUB_USERNAME="${GITHUB_USERNAME:-}"
 GITHUB_PASSWORD="${GITHUB_PASSWORD:-}"
-
+TAG=$(cat current-version.txt)
 while getopts "hu:p:t:" OPTION
 do
   case ${OPTION} in
@@ -40,10 +41,17 @@ if [ -z "${GITHUB_USERNAME}" ] || [ -z "${GITHUB_PASSWORD}" ] || [ -z "${TAG}" ]
   usage
 fi
 
+echo "====== INFO ======"
+echo "Make sure you have the latest version of the repository checked out."
+echo "react-o11y-app/push-to-dockerhub.sh -t ${TAG} -u github_username -p github_password"
+echo "service-foundry-builder/push-to-dockerhub.sh -t ${TAG} -u github_username -p github_password"
+echo "==================="
+
 CHART_VERSION="${TAG}"
-REPOSITORY="credemol/service-foundry-builder"
+#REPOSITORY="credemol/service-foundry-builder"
 
 for chart in "${all_charts[@]}"; do
+  REPOSITORY="credemol/${chart}"
   echo "Updating chart version for ${chart} to ${TAG}"
   # if OS is MacOS
   if [[ "$OSTYPE" == "darwin"* ]]; then
@@ -67,4 +75,4 @@ for chart in "${all_charts[@]}"; do
   git push origin main
 done
 
-
+echo "Merge the changes of main branch to the ph-pages branch on Github "
