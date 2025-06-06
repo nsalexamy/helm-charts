@@ -65,16 +65,16 @@ for chart in "${all_charts[@]}"; do
   fi
 
   helm package ${chart}
-  helm repo index . --url https://nsalexamy.github.io/helm-charts
-
-  git add .
-  git commit -m "Update ${chart} chart to version $CHART_VERSION"
-
-  git tag -a v${CHART_VERSION} -m "Release version $CHART_VERSION"
-
-  git push origin main
-  git push origin v${CHART_VERSION}
-
 done
+
+helm repo index . --url https://nsalexamy.github.io/helm-charts
+
+git add .
+git commit -m "Update ${chart} chart to version $CHART_VERSION"
+
+git tag -a v${CHART_VERSION} -m "Release version $CHART_VERSION"
+
+git push origin main
+git push origin v${CHART_VERSION}
 
 echo "Merge the changes of main branch to the ph-pages branch on Github "
