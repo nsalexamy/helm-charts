@@ -6,6 +6,7 @@ Service Foundry Builder is a Kubernetes-native tool for building and deploying S
 ## Helm Charts
 
 - [Service Foundry Builder](service-foundry-builder/README.md): A Helm chart for deploying the Service Foundry Builder.
+- [React O11y App](react-o11y-app/README.md): A Helm chart for deploying the React O11y App, which provides a user interface for observability.
 
 ## Service Foundry
 
@@ -19,7 +20,11 @@ Service Foundry Builder is a Kubernetes-native tool for building and deploying S
 ```
 
 ```shell
-./push-to-github.sh -t 0.1.6 -u github-user -github-password
+export GITHUB_USER=credemol
+export GITHUB_PASSWORD='github-password'
+export IMAGE_TAG=0.1.7
+
+./push-to-github.sh -t $IMAGE_TAG -u $GITHUB_USER -p $GITHUB_PASSWORD
 ```
 
 
