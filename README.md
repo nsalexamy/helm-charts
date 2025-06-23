@@ -13,21 +13,20 @@ Service Foundry Builder is a Kubernetes-native tool for building and deploying S
 - [Service Foundry](https://nsalexamy.github.io/service-foundry/): A cloud-native platform for building and deploying turnkey solutions for various use cases such as observability, SSO, Spring Backend, and BigData.
 
 
-== Scripts
+## Scripts
 
 ```shell
 ./push-to-ecr.sh -t 0.1.6
 ```
 
 ```shell
-export GITHUB_USER=credemol
+export GITHUB_USER='github-username'
 export GITHUB_PASSWORD='github-password'
 export IMAGE_TAG=0.1.7
 
 ./push-to-github.sh -t $IMAGE_TAG -u $GITHUB_USER -p $GITHUB_PASSWORD
 ```
 
+Make sure to merge the changes to the `gh-pages` branch and create a new tag for the release.
 
 
-
-```shell
