@@ -5,6 +5,7 @@ metadata:
   labels:
     {{- include "service-foundry-builder.labels" . | nindent 4 }}
 spec:
+  backoffLimit: 0
   template:
     metadata:
       {{- with .Values.podAnnotations }}
