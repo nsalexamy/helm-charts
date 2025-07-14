@@ -1,0 +1,8 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name:  {{ include "otel-spring-example.fullname" . }}-config-reader
+rules:
+  - apiGroups: ["", "extensions", "apps"]
+    resources: ["configmaps", "secrets", "pods", "services", "namespaces", "endpoints"]
+    verbs: ["get", "list", "watch"]
