@@ -5,17 +5,17 @@ all_charts=(
     "service-foundry-builder"
     "react-o11y-app"
     "service-foundry-app-frontend"
+    "service-foundry-app-backend"
 )
 
 usage() {
   echo ''
   echo ''
-  echo "Usage: ${0} [-u github-username] [-p github-password] [-t tag]"
+  echo "Usage: ${0} [-u github-username] [-p github-password] "
   echo ''
   echo 'options'
   echo '  -u : Github username'
   echo '  -p : Github password'
-  echo '  -t : Tag for the docker image and chart version. default is 0.1.0'
   echo '  -h : Display this help message'
 
   exit 1
@@ -27,8 +27,8 @@ GITHUB_PASSWORD="${GITHUB_PASSWORD:-}"
 while getopts "hu:p:" OPTION
 do
   case ${OPTION} in
-#    u) GITHUB_USERNAME="${OPTARG}" ;;
-#    p) GITHUB_PASSWORD="${OPTARG}" ;;
+    u) GITHUB_USERNAME="${OPTARG}" ;;
+    p) GITHUB_PASSWORD="${OPTARG}" ;;
 #    t) TAG="${OPTARG}" ;;
     h) usage ;;
     ?) usage ;;
