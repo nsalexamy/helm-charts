@@ -1,0 +1,12 @@
+= service-foundry-app-frontend
+
+== Push Helm Chart to GitHub Container Registry
+
+== Install the Chart
+
+[source,shell]
+----
+$ helm install service-foundry-app-frontend \
+  service-foundry/service-foundry-app-frontend \
+  -n service-foundry --create-namespace
+----
