@@ -132,7 +132,7 @@ volumeMounts:
     readOnly: true
   - name: service-foundry-config-files
     mountPath: /opt/nsa2/service-foundry/config-files
-    readOnly: true
+    readOnly: false # bootstrap script will write to this directory
 # - name: foo
 #   mountPath: "/etc/foo"
 #   readOnly: true
