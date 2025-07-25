@@ -121,3 +121,8 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
+extraEnvs: []
+
+gin:
+  mode: "release"
