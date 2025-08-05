@@ -48,9 +48,9 @@ spec:
             - name: GIN_MODE
               value: {{ . | quote }}
             {{- end }}
-          {{- if .Values.envFrom }}
+          {{- with .Values.envFrom }}
           envFrom:
-          {{ toYaml .Values.envFrom | indent 12 }}
+            {{- toYaml . | nindent 12 }}
           {{- end }}
           ports:
             - name: http
