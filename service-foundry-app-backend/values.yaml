@@ -126,3 +126,7 @@ extraEnvs: []
 
 gin:
   mode: "release"
+
+envFrom:
+  - configMapRef:
+      name: service-foundry-builder-configmap
