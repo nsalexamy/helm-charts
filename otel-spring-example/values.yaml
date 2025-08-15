@@ -145,9 +145,9 @@ volumeMounts: []
 
 
 
-nodeSelector:
+nodeSelector: {}
   #alpha.eksctl.io/nodegroup-name: depnodes
-  agentpool: depnodes
+  #agentpool: depnodes
 
 
 tolerations: []
