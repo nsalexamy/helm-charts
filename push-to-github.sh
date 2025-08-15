@@ -3,6 +3,7 @@ set -e
 
 all_charts=(
     "service-foundry-builder"
+    "otel-spring-example"
     "react-o11y-app"
     "service-foundry-app-frontend"
     "service-foundry-app-backend"
