@@ -48,7 +48,7 @@ spec:
   
           env:
             - name: SLEEP_SERVICE_URI
-              value: http://otel-spring-example:8080/sleep
+              value: http://otel-spring-example.{{ .Release.Namespace }}:8080/sleep
 
 
 
