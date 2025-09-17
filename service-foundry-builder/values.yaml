@@ -161,8 +161,8 @@ azure:
 # command can be 'deploy' or 'clean'
 command: deploy
 
-extraEnvs:
 #extraEnvs:
+extraEnvs:
 #  - name: TF_VAR_aws_region
 #    valueFrom:
 #      secretKeyRef:
@@ -170,7 +170,8 @@ extraEnvs:
 #        key: AWS_REGION
 #  - name:  TF_VAR_eks_cluster_name
 #    value: young-eks
-
+  - name: PLACEHOLDER_ENV_VAR
+    value: placeholder-value-for-later-use
 
 envFrom:
   - secretRef:
