@@ -161,7 +161,7 @@ azure:
 # command can be 'deploy' or 'clean'
 command: deploy
 
-extraEnvs: []
+extraEnvs:
 #extraEnvs:
 #  - name: TF_VAR_aws_region
 #    valueFrom:
