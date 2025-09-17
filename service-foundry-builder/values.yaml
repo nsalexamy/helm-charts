@@ -161,7 +161,7 @@ azure:
 # command can be 'deploy' or 'clean'
 command: deploy
 
-#extraEnvs: []
+extraEnvs: []
 #extraEnvs:
 #  - name: TF_VAR_aws_region
 #    valueFrom:
@@ -175,12 +175,16 @@ command: deploy
 envFrom:
   - secretRef:
       name: service-foundry-builder-secret
+      optional: true
   - configMapRef:
       name: service-foundry-builder-configmap
+      optional: true
   - secretRef:
       name: aws-secret
+      optional: true
   - configMapRef:
       name: aws-configmap
+      optional: true
 
 
 
