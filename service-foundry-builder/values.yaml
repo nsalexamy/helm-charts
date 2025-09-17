@@ -162,14 +162,14 @@ azure:
 command: deploy
 
 #extraEnvs: []
-extraEnvs:
-  - name: TF_VAR_aws_region
-    valueFrom:
-      secretKeyRef:
-        name: aws-secret
-        key: AWS_REGION
-  - name:  TF_VAR_eks_cluster_name
-    value: young-eks
+#extraEnvs:
+#  - name: TF_VAR_aws_region
+#    valueFrom:
+#      secretKeyRef:
+#        name: aws-secret
+#        key: AWS_REGION
+#  - name:  TF_VAR_eks_cluster_name
+#    value: young-eks
 
 
 envFrom:
