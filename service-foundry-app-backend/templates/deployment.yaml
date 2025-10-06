@@ -27,6 +27,9 @@ spec:
       imagePullSecrets:
         {{- toYaml . | nindent 8 }}
       {{- end }}
+      {{- if .Values.obiContainer.enabled }}
+      shareProcessNamespace: true
+      {{- end }}
       serviceAccountName: {{ include "service-foundry-app-backend.serviceAccountName" . }}
       {{- with .Values.podSecurityContext }}
       securityContext:
@@ -72,6 +75,17 @@ spec:
           volumeMounts:
             {{- toYaml . | nindent 12 }}
           {{- end }}
+        {{- if .Values.obiContainer.enabled -}}
+          {{- with .Values.obiContainer }}
+        - name: obi
+          image: {{ .image }}
+          securityContext:
+            {{- toYaml .securityContext | nindent 12 }}
+          env:
+            {{- toYaml .env | nindent 12 }}
+          {{- end }}
+        {{- end }}
+
       {{- with .Values.volumes }}
       volumes:
         {{- toYaml . | nindent 8 }}
