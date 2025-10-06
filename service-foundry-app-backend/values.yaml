@@ -140,7 +140,7 @@ envFrom:
       optional: true
 
 obiContainer:
-  enabled: true
+  enabled: false
   image: otel/ebpf-instrument:main
   securityContext: # Privileges are required to install the eBPF probes
     privileged: true
