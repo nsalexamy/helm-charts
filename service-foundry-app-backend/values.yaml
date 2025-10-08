@@ -155,3 +155,7 @@ obiContainer:
       value: 'true'
     - name: OTEL_SERVICE_NAME
       value: "service-foundry-app-backend"
+    - name: OTEL_TRACES_SAMPLER
+      value: "parentbased_traceidratio"
+    - name: OTEL_TRACES_SAMPLER_ARG
+      value: "1.0"  # 100% sampling for troubleshooting
