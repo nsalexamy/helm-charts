@@ -159,7 +159,11 @@ obiContainer:
       value: "parentbased_traceidratio"
     - name: OTEL_TRACES_SAMPLER_ARG
       value: "1.0"  # 100% sampling for troubleshooting
+    - name: OTEL_EBPF_TRACES_ENABLED
+      value: 'true' # default is true
     - name: OTEL_EBPF_INCLUDE_NETWORK_SPANS
       value: 'true'
     - name: OTEL_EBPF_DISABLE_SDK_DETECTION
       value: 'true'  # disable auto-instrumentation detection to reduce overhead'
+    - name: OTEL_EBPF_HTTP_INJECT_TRACE_CONTEXT
+      value: 'true'  # enable http trace context injection
