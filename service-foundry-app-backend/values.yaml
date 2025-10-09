@@ -159,3 +159,7 @@ obiContainer:
       value: "parentbased_traceidratio"
     - name: OTEL_TRACES_SAMPLER_ARG
       value: "1.0"  # 100% sampling for troubleshooting
+    - name: OTEL_EBPF_INCLUDE_NETWORK_SPANS
+      value: 'true'
+    - name: OTEL_EBPF_DISABLE_SDK_DETECTION
+      value: 'true'  # disable auto-instrumentation detection to reduce overhead'
