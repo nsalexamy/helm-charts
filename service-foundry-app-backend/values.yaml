@@ -139,11 +139,18 @@ envFrom:
       name: aws-secret
       optional: true
 
+
+
 obiContainer:
   enabled: false
   image: otel/ebpf-instrument:main
   securityContext: # Privileges are required to install the eBPF probes
     privileged: true
+    runAsUser: 0
+    capabilities:
+      add:
+        - SYS_ADMIN
+        - SYS_RESOURCE
   env:
     # The internal port of the application container
     - name: OTEL_EBPF_OPEN_PORT
@@ -163,7 +170,13 @@ obiContainer:
       value: 'true' # default is true
     - name: OTEL_EBPF_INCLUDE_NETWORK_SPANS
       value: 'true'
-    - name: OTEL_EBPF_DISABLE_SDK_DETECTION
-      value: 'true'  # disable auto-instrumentation detection to reduce overhead'
-    - name: OTEL_EBPF_HTTP_INJECT_TRACE_CONTEXT
-      value: 'true'  # enable http trace context injection
+    # Disables the detection of Go specifics when the eBPF tracer inspects executables to be instrumented
+    - name: OTEL_EBPF_SKIP_GO_SPECIFIC_TRACERS
+      value: 'true'  # set to true to skip go specific tracers
+    # Disables OBI instrumentation of services already instrumented with OpenTelemetry.
+    - name: OTEL_EBPF_EXCLUDE_OTEL_INSTRUMENTED_SERVICES
+      value: 'false'
+    #- name: OTEL_EBPF_DISABLE_SDK_DETECTION
+    #  value: 'true'  # disable auto-instrumentation detection to reduce overhead'
+    #- name: OTEL_EBPF_HTTP_INJECT_TRACE_CONTEXT
+    #  value: 'true'  # enable http trace context injection
