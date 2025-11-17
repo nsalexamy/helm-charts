@@ -119,6 +119,11 @@ volumes:
     secret:
       secretName: service-foundry-config-files
       optional: false
+
+  - name: service-foundry-license-file
+    secret:
+      secretName: service-foundry-license-secret
+      optional: true
 # - name: foo
 #   secret:
 #     secretName: mysecret
@@ -133,6 +138,9 @@ volumeMounts:
   - name: service-foundry-config-files
     mountPath: /opt/nsa2/service-foundry/config-files
     readOnly: false # bootstrap script will write to this directory
+  - name: service-foundry-license-file
+    mountPath: /opt/nsa2/service-foundry/license
+    readOnly: true
 # - name: foo
 #   mountPath: "/etc/foo"
 #   readOnly: true
@@ -186,6 +194,9 @@ envFrom:
   - configMapRef:
       name: aws-configmap
       optional: true
+#  - secretRef:
+#      name: service-foundry-license-secret
+#      optional: false
 
 
 
