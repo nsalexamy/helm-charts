@@ -111,6 +111,7 @@ autoscaling:
 # Additional volumes on the output Deployment definition.
 #volumes: []
 volumes:
+  # SSH key for generator-nsa2 and GitOps repository access
   - name: service-foundry-github-ssh
     secret:
       secretName: service-foundry-github-ssh
