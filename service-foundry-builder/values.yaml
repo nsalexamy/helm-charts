@@ -125,6 +125,11 @@ volumes:
     secret:
       secretName: service-foundry-license-secret
       optional: true
+
+  - name: sealed-secrets-key-backup
+    secret:
+      secretName: sealed-secrets-key-backup
+      optional: true
 # - name: foo
 #   secret:
 #     secretName: mysecret
@@ -141,6 +146,9 @@ volumeMounts:
     readOnly: false # bootstrap script will write to this directory
   - name: service-foundry-license-file
     mountPath: /opt/nsa2/service-foundry/license
+    readOnly: true
+  - name: sealed-secrets-key-backup
+    mountPath: /opt/nsa2/sealed-secrets
     readOnly: true
 # - name: foo
 #   mountPath: "/etc/foo"
