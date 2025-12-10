@@ -42,6 +42,8 @@ spec:
               value: /opt/nsa2/github-ssh/id_rsa
             - name: GIT_OPS_SSH_KEY_PATH
               value: /opt/nsa2/github-ssh/argocd_id_rsa
+            - name: SEALED_SECRETS_KEY_BACKUP_FILE_PATH
+              value: /opt/nsa2/sealed-secrets/sealed-secrets-key-backup.yaml
             {{ toYaml .Values.extraEnvs | nindent 12 }}
             {{- with .Values.command }}
             - name: COMMAND

@@ -1,0 +1,21 @@
+= Vibe Coding Guide
+
+== Prompts Used
+
+.Create a Helm chart named `service-foundry-community` for both frontend and backend.
+----
+Create a Helm chart named `service-foundry-community` for both frontend and backend.
+Add subcharts for frontend and backend components.
+Both subcharts use the same version.
+The Docker image for frontend is 'nsalexamy/service-foundry-community-frontend:${VERSION}'.
+The Docker image for backend is 'nsalexamy/service-foundry-community-backend:${VERSION}'.
+The frontend listens on port 80 and it is an React application.
+The backend listens on port 8080 and it is a Go application.
+The config.json in public directory of the frontend can be configured as Kubernetes ConfigMap.
+The private key to generate license as JWT token is stored as Kubernetes Secret and can be mounted as a file in the backend pod with the environment variable 'SF_LICENSE_PRIVATE_KEY'.
+----
+
+.adding ingressroute
+----
+
+----
