@@ -1,0 +1,25 @@
+{{- $serviceName := include "frontend.fullname" . -}}
+{{- if .Values.rollouts.enabled -}}
+  {{- if and .Values.rollouts.strategy .Values.rollouts.strategy.blueGreen .Values.rollouts.strategy.blueGreen.activeService -}}
+    {{- $serviceName = .Values.rollouts.strategy.blueGreen.activeService -}}
+  {{- end -}}
+  {{- if and .Values.rollouts.strategy .Values.rollouts.strategy.canary .Values.rollouts.strategy.canary.stableService -}}
+    {{- $serviceName = .Values.rollouts.strategy.canary.stableService -}}
+  {{- end -}}
+{{- end -}}
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "{{ include "frontend.fullname" . }}-test-connection"
+  labels:
+    {{- include "frontend.labels" . | nindent 4 }}
+  annotations:
+    "helm.sh/hook": test
+spec:
+  containers:
+    - name: wget
+      image: busybox
+      command: ['wget']
+      args: ['{{ $serviceName }}:{{ .Values.service.port }}']
+  restartPolicy: Never
+

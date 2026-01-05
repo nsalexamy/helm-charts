@@ -1,0 +1,18 @@
+{{- if .Values.rollouts.enabled }}
+{{- $serviceName := "" }}
+{{- if and .Values.rollouts.strategy.blueGreen .Values.rollouts.strategy.blueGreen.previewService }}
+  {{- $serviceName = .Values.rollouts.strategy.blueGreen.previewService }}
+{{- end }}
+{{- if and .Values.rollouts.strategy.canary .Values.rollouts.strategy.canary.canaryService }}
+  {{- $serviceName = .Values.rollouts.strategy.canary.canaryService }}
+{{- end }}
+
+{{- if $serviceName }}
+{{- include "frontend.service" (dict
+  "serviceName" $serviceName
+  "Values" .Values
+  "Release" .Release
+  "Chart" .Chart
+) }}
+{{- end }}
+{{- end }}

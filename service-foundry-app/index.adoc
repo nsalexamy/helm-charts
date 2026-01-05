@@ -1,0 +1,36 @@
+= service-foundry-app helm chart
+
+== Introduction
+
+This is a helm chart for the service-foundry-app
+
+- service-foundry-app-frontend
+- service-foundry-app-backend
+
+== How to create
+
+[source,shell]
+----
+$ helm create service-foundry-app
+$ cd service-foundry-app
+----
+
+=== Creating the Sub-Charts
+
+[source,shell]
+----
+#$ helm create charts/service-foundry-app-frontend
+#$ helm create charts/service-foundry-app-backend
+
+$ yo open-nsa2:helm-chart-rollouts charts/frontend \
+  --image-repository ghcr.io/nsalexamy/service-foundry-app-frontend \
+  --image-tag latest \
+  --service-port 80
+
+$ yo open-nsa2:helm-chart-rollouts charts/backend \
+  --image-repository ghcr.io/nsalexamy/service-foundry-app-backend \
+  --image-tag latest \
+  --service-port 8080
+
+----
+

@@ -1,0 +1,12 @@
+global: 
+  version: "0.14.0"
+
+
+frontend:
+  enabled: true
+
+
+backend:
+  enabled: true
+
+  
