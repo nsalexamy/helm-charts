@@ -5,8 +5,31 @@ global:
 frontend:
   enabled: true
 
+  image:
+    repository: "ghcr.io/nsalexamy/service-foundry-app-frontend"
+    pullPolicy: IfNotPresent
+    tag: ""
 
 backend:
   enabled: true
+
+  image:
+    repository: "ghcr.io/nsalexamy/service-foundry-app-backend"
+    pullPolicy: IfNotPresent
+    tag: ""
+
+  serviceAccount:
+    annotations:
+      eks.amazonaws.com/role-arn: arn:aws:iam::${AWS_ACCOUNT_ID}:role/${EKS_CLUSTER_NAME}-service-foundry-app-backend-role
+
+  # Custom values for Service Foundry App Backend
+  extraEnvs:
+    # this value is used when installing the service-foundry-builder in the backend.
+    - name: "SERVICE_ACCOUNT_ROLE_ARN"
+      value: "arn:aws:iam::${AWS_ACCOUNT_ID}:role/${EKS_CLUSTER_NAME}-service-foundry-app-backend-role"
+    - name: "SF_BUILDER_CHART_VERSION"
+      value: "${SF_BUILDER_CHART_VERSION:-0.1.10}"
+    - name: "SSH_KEY_PATH"
+      value: "/opt/nsa2/service-foundry/ssh/id_rsa"
 
   
