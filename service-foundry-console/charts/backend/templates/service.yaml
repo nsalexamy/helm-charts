@@ -1,0 +1,11 @@
+{{- $serviceName := include "backend.fullname" . -}}
+{{- if .Values.rollouts.enabled -}}
+  {{- if and .Values.rollouts.strategy .Values.rollouts.strategy.blueGreen .Values.rollouts.strategy.blueGreen.activeService -}}
+    {{- $serviceName = .Values.rollouts.strategy.blueGreen.activeService -}}
+  {{- end -}}
+  {{- if and .Values.rollouts.strategy .Values.rollouts.strategy.canary .Values.rollouts.strategy.canary.stableService -}}
+    {{- $serviceName = .Values.rollouts.strategy.canary.stableService -}}
+  {{- end -}}
+{{- end -}}
+{{- include "backend.service" (dict "serviceName" $serviceName "Values" .Values "Release" .Release "Chart" .Chart) }}
+
