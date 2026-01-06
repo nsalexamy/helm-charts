@@ -114,14 +114,31 @@ autoscaling:
   # targetMemoryUtilizationPercentage: 80
 
 # Additional volumes on the output Deployment definition.
-volumes: []
+#volumes: []
+volumes:
+  - name: github-ssh
+    secret:
+      secretName: service-foundry-github-ssh
+      optional: false
+  - name: service-foundry-license-file
+    secret:
+      secretName: service-foundry-license-secret
+      optional: true
 # - name: foo
 #   secret:
 #     secretName: mysecret
 #     optional: false
 
 # Additional volumeMounts on the output Deployment definition.
-volumeMounts: []
+#volumeMounts: []
+volumeMounts:
+  - name: github-ssh
+    mountPath: /opt/nsa2/service-foundry/ssh/id_rsa
+    subPath: argocd_id_rsa # make sure the file is named argocd_id_rsa NOT id_rsa
+    readOnly: false
+  - name: service-foundry-license-file
+    mountPath: /opt/nsa2/service-foundry/license
+    readOnly: true
 # - name: foo
 #   mountPath: "/etc/foo"
 #   readOnly: true
