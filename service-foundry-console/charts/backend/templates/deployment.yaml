@@ -42,6 +42,18 @@ spec:
           {{- end }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
+          env:
+            {{- with .Values.extraEnvs }}
+            {{ toYaml . | nindent 12 }}
+            {{- end }}
+            {{- with .Values.gin.mode }}
+            - name: GIN_MODE
+              value: {{ . | quote }}
+            {{- end }}
+          {{- with .Values.envFrom }}
+          envFrom:
+            {{- toYaml . | nindent 12 }}
+          {{- end }}          
           ports:
             - name: http
               containerPort: {{ .Values.service.port }}
