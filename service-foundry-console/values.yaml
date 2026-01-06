@@ -8,7 +8,7 @@ frontend:
   image:
     repository: "ghcr.io/nsalexamy/service-foundry-app-frontend"
     pullPolicy: IfNotPresent
-    tag: ""
+    #tag: ""
 
 backend:
   enabled: true
@@ -16,7 +16,7 @@ backend:
   image:
     repository: "ghcr.io/nsalexamy/service-foundry-app-backend"
     pullPolicy: IfNotPresent
-    tag: ""
+    #tag: ""
 
   serviceAccount:
     annotations:
