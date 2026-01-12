@@ -1,0 +1,10 @@
+global: 
+  version: "0.2.0"
+
+
+frontend:
+  enabled: true
+
+
+backend:
+  enabled: true
