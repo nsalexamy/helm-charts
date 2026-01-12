@@ -6,6 +6,7 @@ all_charts=(
     "otel-spring-example"
     "react-o11y-app"
     "service-foundry-console"
+    "service-foundry-community"
 )
 
 usage() {

@@ -1,0 +1,47 @@
+= service-foundry-community helm chart
+
+== Introduction
+
+This is a helm chart for the service-foundry-community
+
+- service-foundry-app-frontend
+- service-foundry-app-backend
+
+== How to create
+
+[source,shell]
+----
+$ helm create service-foundry-community
+$ cd service-foundry-community
+----
+
+Delete unused files
+
+[source,shell]
+----
+$ rm -rf \
+  templates/tests \
+  templates/deployment.yaml \
+  templates/hpa.yaml \
+  templates/ingress.yaml \
+  templates/NOTES.txt \
+  templates/service.yaml \
+  templates/serviceaccount.yaml
+----
+
+=== Creating the Sub-Charts
+
+[source,shell]
+----
+$ yo open-nsa2:helm-chart-rollouts charts/frontend \
+  --image-repository ghcr.io/nsalexamy/service-foundry-community-frontend \
+  --image-tag latest \
+  --service-port 80
+
+$ yo open-nsa2:helm-chart-rollouts charts/backend \
+  --image-repository ghcr.io/nsalexamy/service-foundry-community-backend \
+  --image-tag latest \
+  --service-port 8080
+
+----
+
