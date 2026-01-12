@@ -60,3 +60,11 @@ Create the name of the service account to use
 {{- default "default" .Values.serviceAccount.name }}
 {{- end }}
 {{- end }}
+
+{{- define "service-foundry-console.backendFullname" -}}
+{{ printf "%s-backend" .Release.Name }}
+{{- end }}
+
+{{- define "service-foundry-console.frontendFullname" -}}
+{{ printf "%s-frontend" .Release.Name }}
+{{- end }}
