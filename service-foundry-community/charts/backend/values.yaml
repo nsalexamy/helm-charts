@@ -11,7 +11,7 @@ image:
   # This sets the pull policy for images.
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "latest"
+  tag: ""
 
 # This is for the secrets for pulling an image from a private repository more information can be found here: https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/
 imagePullSecrets: []
@@ -30,16 +30,16 @@ database:
   enabled: true
   host: "postgresql"
   port: 5432
-  user: "servicefoundry"
-  database: "servicefoundry"
+  user: "service_foundry"
+  database: "service_foundry"
   # ssl mode can be "require" or "disable"
   # default is "require"
-  ssl-mode: "require" 
+  sslMode: "disable" 
   
   # Note: Go templates like {{ .Release.Name }} are NOT expanded in values.yaml.
   # We leave this empty to let the template handle the default naming convention.
   existingSecret: ""
-  password-secret-key: "password" # default is password. This is the key in the existingSecret that contains the password
+  passwordSecretKey: "password" # default is password. This is the key in the existingSecret that contains the password
 
 rollouts:
   enabled: false

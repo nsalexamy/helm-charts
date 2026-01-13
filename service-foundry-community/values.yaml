@@ -2,8 +2,12 @@
 #   version: "0.2.0"
 
 # To make it easier to update the image tag for both frontend and backend, we can use the following values.
-frontend.image.tag: ""
-backend.image.tag: ""
+frontend:
+  image:
+    tag: ""
+backend:
+  image:
+    tag: ""
 
 
 
