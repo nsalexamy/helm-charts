@@ -79,7 +79,7 @@ spec:
               valueFrom:
                 configMapKeyRef:
                   name: {{ include "backend.fullname" . }}-database
-                  key: ssl_mode
+                  key: sslMode
             - name: SF_COMMUNITY_DATABASE_PASSWORD
               valueFrom:
                 secretKeyRef:
@@ -88,7 +88,7 @@ spec:
                   {{- else }}
                   name: {{ include "backend.fullname" . }}-database-secret
                   {{- end }}
-                  key: {{ .Values.database.password_secret_key | default "password" }}
+                  key: {{ .Values.database.passwordSecretKey | default "password" }}
 
             {{- with .Values.extraEnvs }}
               {{ toYaml . | nindent 12 }}

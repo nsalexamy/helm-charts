@@ -9,4 +9,4 @@ data:
   port: {{ .Values.database.port | quote }}
   name: {{ .Values.database.database | quote }}
   user: {{ .Values.database.user | quote }}
-  ssl_mode: {{ index .Values.database "ssl-mode" | quote }}
+  sslMode: {{ .Values.database.sslMode | quote }}
