@@ -65,7 +65,7 @@ spec:
               valueFrom:
                 configMapKeyRef:
                   name: {{ include "backend.fullname" . }}-database
-                  key: name
+                  key: dbName
             - name: SF_COMMUNITY_DATABASE_USER
               valueFrom:
                 configMapKeyRef:
