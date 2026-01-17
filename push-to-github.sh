@@ -1,10 +1,16 @@
 #!/bin/bash
 set -e
 
+# all_charts=(
+#     "service-foundry-builder"
+#     "otel-spring-example"
+#     "react-o11y-app"
+#     "service-foundry-console"
+#     "service-foundry-community"
+# )
+
 all_charts=(
     "service-foundry-builder"
-    "otel-spring-example"
-    "react-o11y-app"
     "service-foundry-console"
     "service-foundry-community"
 )

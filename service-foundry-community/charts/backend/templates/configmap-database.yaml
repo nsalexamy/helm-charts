@@ -8,5 +8,6 @@ data:
   host: {{ .Values.database.host | quote }}
   port: {{ .Values.database.port | quote }}
   user: {{ .Values.database.user | quote }}
+  dbSchema: {{ .Values.database.dbSchema | quote }}
   dbName: {{ .Values.database.dbName | quote }}
   sslMode: {{ .Values.database.sslMode | quote }}

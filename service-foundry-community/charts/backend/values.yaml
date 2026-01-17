@@ -31,6 +31,7 @@ database:
   host: "postgresql"
   port: 5432
   user: "service_foundry"
+  dbSchema: "public"
   dbName: "service_foundry"
   # ssl mode can be "require" or "disable"
   # default is "require"
