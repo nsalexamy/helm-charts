@@ -1,9 +1,10 @@
-global: 
-  version: "0.14.0"
+# global: 
+#   version: "0.14.0"
 
+# WARNING: values.yaml does not support nested values for image tags.
 # To make it easier to update the image tag for both frontend and backend, we can use the following values.
-frontend.image.tag: "0.14.0"
-backend.image.tag: "0.14.0"
+# frontend.image.tag: "0.14.0"
+# backend.image.tag: "0.14.0"
 
 frontend:
   enabled: true
@@ -11,6 +12,7 @@ frontend:
   image:
     repository: "ghcr.io/nsalexamy/service-foundry-app-frontend"
     pullPolicy: IfNotPresent
+    # tag: "0.15.0-rc1"
     #tag: ""
 
 backend:
@@ -19,6 +21,7 @@ backend:
   image:
     repository: "ghcr.io/nsalexamy/service-foundry-app-backend"
     pullPolicy: IfNotPresent
+    # tag: "0.15.0-rc1"
     #tag: ""
 
   serviceAccount:

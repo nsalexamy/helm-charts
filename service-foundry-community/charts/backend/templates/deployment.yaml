@@ -66,6 +66,11 @@ spec:
                 configMapKeyRef:
                   name: {{ include "backend.fullname" . }}-database
                   key: dbName
+            - name: SF_COMMUNITY_DATABASE_SCHEMA
+              valueFrom:
+                configMapKeyRef:
+                  name: {{ include "backend.fullname" . }}-database
+                  key: dbSchema                  
             - name: SF_COMMUNITY_DATABASE_USER
               valueFrom:
                 configMapKeyRef:
