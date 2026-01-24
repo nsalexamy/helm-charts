@@ -21,7 +21,7 @@ fullnameOverride: ""
 
 licenseSecret:
   create: false
-  name: service-foundry-license-keys
+  name: service-foundry-license-secret
   key: private.pem
   # Plain private key value (only used if create=true). Prefer external Secret management in production.
   privateKey: ""
