@@ -3,7 +3,7 @@ entries:
   otel-spring-example:
   - apiVersion: v2
     appVersion: 0.2.0
-    created: "2026-02-08T18:03:13.484728-08:00"
+    created: "2026-02-19T08:56:32.776436-08:00"
     description: A Helm chart for Kubernetes
     digest: 6c7c442eac8124b72a3c73644ad198f55e766370027e7423c595bfd9bddd7651
     name: otel-spring-example
@@ -13,7 +13,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2026-02-08T18:03:13.484112-08:00"
+    created: "2026-02-19T08:56:32.775962-08:00"
     description: A Helm chart for Kubernetes
     digest: db5cd143359fc1a162f5866a2fd4acd833ff32e5d5887d62701845916210026d
     name: otel-spring-example
@@ -24,7 +24,7 @@ entries:
   react-o11y-app:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2026-02-08T18:03:13.486147-08:00"
+    created: "2026-02-19T08:56:32.777622-08:00"
     description: A Helm chart for Kubernetes
     digest: de73284e264fc772d37766c360eb17d992bd0bc21f6896163ebef27b5854e4d4
     name: react-o11y-app
@@ -34,7 +34,7 @@ entries:
     version: 0.1.8
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2026-02-08T18:03:13.485614-08:00"
+    created: "2026-02-19T08:56:32.777257-08:00"
     description: A Helm chart for Kubernetes
     digest: b836bfb332237780a82c994f38e50d15148ba080cb2f885f15492691de26d53a
     name: react-o11y-app
@@ -44,7 +44,7 @@ entries:
     version: 0.1.7
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2026-02-08T18:03:13.485109-08:00"
+    created: "2026-02-19T08:56:32.776838-08:00"
     description: A Helm chart for Kubernetes
     digest: c050ae693cbfd9f0e1a620d5f681b2ea331baae64b77b6f73c61f998d2aab5b9
     name: react-o11y-app
@@ -55,7 +55,7 @@ entries:
   service-foundry-app:
   - apiVersion: v2
     appVersion: 0.14.0
-    created: "2026-02-08T18:03:13.486839-08:00"
+    created: "2026-02-19T08:56:32.778208-08:00"
     description: A Helm chart for Kubernetes
     digest: 309d67e31cb4438b7df5f006ea4fd5391c32f8550410f8ff5a380dc6b57f26bb
     name: service-foundry-app
@@ -66,7 +66,7 @@ entries:
   service-foundry-app-backend:
   - apiVersion: v2
     appVersion: 0.14.0
-    created: "2026-02-08T18:03:13.490582-08:00"
+    created: "2026-02-19T08:56:32.779837-08:00"
     description: A Helm chart for Kubernetes
     digest: 70ecf40fc85d410ee7264ac4edbb7062c7da117a6dc7472d3baea2605dbe897b
     name: service-foundry-app-backend
@@ -76,7 +76,7 @@ entries:
     version: 0.14.0
   - apiVersion: v2
     appVersion: 0.13.0
-    created: "2026-02-08T18:03:13.489983-08:00"
+    created: "2026-02-19T08:56:32.779381-08:00"
     description: A Helm chart for Kubernetes
     digest: 5dcc270b6f8baa7e86203c951bcf9b35de4fe2b9aa5d85737b01f514ec76fc78
     name: service-foundry-app-backend
@@ -86,7 +86,7 @@ entries:
     version: 0.13.0
   - apiVersion: v2
     appVersion: 0.12.0
-    created: "2026-02-08T18:03:13.487978-08:00"
+    created: "2026-02-19T08:56:32.778976-08:00"
     description: A Helm chart for Kubernetes
     digest: 8d13046a914f873d059eaf2d326c48189c26dd08b38b7e46bbadcb37ddb8fa95
     name: service-foundry-app-backend
@@ -96,7 +96,7 @@ entries:
     version: 0.12.0
   - apiVersion: v2
     appVersion: 0.5.0
-    created: "2026-02-08T18:03:13.492529-08:00"
+    created: "2026-02-19T08:56:32.781746-08:00"
     description: A Helm chart for Kubernetes
     digest: 9e9a2da2b843965001bdd7c796b1439a84a3d41f6eb210b8beacaeb017a42ab3
     name: service-foundry-app-backend
@@ -106,7 +106,7 @@ entries:
     version: 0.5.0
   - apiVersion: v2
     appVersion: 0.4.0
-    created: "2026-02-08T18:03:13.492158-08:00"
+    created: "2026-02-19T08:56:32.780912-08:00"
     description: A Helm chart for Kubernetes
     digest: ebaf1f1f0bf08fac81a8b3fd9b1fe302d3901b7d19761a16891f9dd176b92532
     name: service-foundry-app-backend
@@ -116,7 +116,7 @@ entries:
     version: 0.4.0
   - apiVersion: v2
     appVersion: 0.3.0
-    created: "2026-02-08T18:03:13.491619-08:00"
+    created: "2026-02-19T08:56:32.78054-08:00"
     description: A Helm chart for Kubernetes
     digest: 689a38d92b7e9fc5b1079d9a5bb9e53374c6d7d405315e6e2db03f2e11ae4792
     name: service-foundry-app-backend
@@ -126,7 +126,7 @@ entries:
     version: 0.3.0
   - apiVersion: v2
     appVersion: 0.2.0
-    created: "2026-02-08T18:03:13.491076-08:00"
+    created: "2026-02-19T08:56:32.780196-08:00"
     description: A Helm chart for Kubernetes
     digest: af9242d0e5bab221f627db4652663d2f7bfea3e3fc73c86d27123efc513a6416
     name: service-foundry-app-backend
@@ -136,7 +136,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2026-02-08T18:03:13.487338-08:00"
+    created: "2026-02-19T08:56:32.778573-08:00"
     description: A Helm chart for Kubernetes
     digest: af81e4c3c6504fc880a1cdde617190b974eda91cfcaff5a6ea3d904019526119
     name: service-foundry-app-backend
@@ -147,7 +147,7 @@ entries:
   service-foundry-app-frontend:
   - apiVersion: v2
     appVersion: 0.14.0
-    created: "2026-02-08T18:03:13.493798-08:00"
+    created: "2026-02-19T08:56:32.78293-08:00"
     description: A Helm chart for Kubernetes
     digest: 2d179987bbc1017883b4c77415ef88d076c5f5d2959a430b828561a86a18ed82
     name: service-foundry-app-frontend
@@ -157,7 +157,7 @@ entries:
     version: 0.14.0
   - apiVersion: v2
     appVersion: 0.13.0
-    created: "2026-02-08T18:03:13.49358-08:00"
+    created: "2026-02-19T08:56:32.782713-08:00"
     description: A Helm chart for Kubernetes
     digest: f6cb302b079755e18b5145537f3723121ea69f7f67991ec789d9a5ef454058c2
     name: service-foundry-app-frontend
@@ -167,7 +167,7 @@ entries:
     version: 0.13.0
   - apiVersion: v2
     appVersion: 0.12.0
-    created: "2026-02-08T18:03:13.493293-08:00"
+    created: "2026-02-19T08:56:32.782401-08:00"
     description: A Helm chart for Kubernetes
     digest: 6dff79a3b7f5ad71934329f8e8d4d84bcd41d0d8c204bce5f5a99a08f960fa25
     name: service-foundry-app-frontend
@@ -177,7 +177,7 @@ entries:
     version: 0.12.0
   - apiVersion: v2
     appVersion: 0.5.0
-    created: "2026-02-08T18:03:13.494974-08:00"
+    created: "2026-02-19T08:56:32.784111-08:00"
     description: A Helm chart for Kubernetes
     digest: 94060da5839563c92195edd41f65eaeb221ebe48645f846af89a63f945b0416e
     name: service-foundry-app-frontend
@@ -187,7 +187,7 @@ entries:
     version: 0.5.0
   - apiVersion: v2
     appVersion: 0.4.0
-    created: "2026-02-08T18:03:13.494705-08:00"
+    created: "2026-02-19T08:56:32.783827-08:00"
     description: A Helm chart for Kubernetes
     digest: b504a8d395c928a53f9e65c32842f588eae1fc43c23ffb8a7ebe44d537f7e9c7
     name: service-foundry-app-frontend
@@ -197,7 +197,7 @@ entries:
     version: 0.4.0
   - apiVersion: v2
     appVersion: 0.3.0
-    created: "2026-02-08T18:03:13.49443-08:00"
+    created: "2026-02-19T08:56:32.783547-08:00"
     description: A Helm chart for Kubernetes
     digest: eb151cc96cefa5c401f068bfa536496386193ca8b2017e9789f8d94ddfd65e20
     name: service-foundry-app-frontend
@@ -207,7 +207,7 @@ entries:
     version: 0.3.0
   - apiVersion: v2
     appVersion: 0.2.0
-    created: "2026-02-08T18:03:13.494119-08:00"
+    created: "2026-02-19T08:56:32.783244-08:00"
     description: A Helm chart for Kubernetes
     digest: dd37ee57fb2dd2c5344f2b7e5d1886436bf38015252c486c1d61892beb026cf6
     name: service-foundry-app-frontend
@@ -217,7 +217,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2026-02-08T18:03:13.492985-08:00"
+    created: "2026-02-19T08:56:32.782077-08:00"
     description: A Helm chart for Kubernetes
     digest: 26f6fe396d23a735a363f623d11fd1ac0ee9e8523bd51a681f965e50da47c55e
     name: service-foundry-app-frontend
@@ -227,8 +227,18 @@ entries:
     version: 0.1.0
   service-foundry-builder:
   - apiVersion: v2
+    appVersion: 0.17.0-rc1
+    created: "2026-02-19T08:56:32.792028-08:00"
+    description: A Helm chart for Kubernetes
+    digest: 7ee0d99f4e808444eacb7799f13d599ad40cb7f9af33a920d506c2c5e29457c6
+    name: service-foundry-builder
+    type: application
+    urls:
+    - https://nsalexamy.github.io/helm-charts/service-foundry-builder-0.17.0-rc1.tgz
+    version: 0.17.0-rc1
+  - apiVersion: v2
     appVersion: 0.16.1
-    created: "2026-02-08T18:03:13.50492-08:00"
+    created: "2026-02-19T08:56:32.791755-08:00"
     description: A Helm chart for Kubernetes
     digest: 8405d28ebb5016341bfc908ba1d8b8855f99e91326ba0f1d43ee385420420dbc
     name: service-foundry-builder
@@ -238,7 +248,7 @@ entries:
     version: 0.16.1
   - apiVersion: v2
     appVersion: 0.16.0
-    created: "2026-02-08T18:03:13.504435-08:00"
+    created: "2026-02-19T08:56:32.791318-08:00"
     description: A Helm chart for Kubernetes
     digest: 7a9c5eb757bc04a7c9457b0bf8925386d3d6eff98329e7b97b433785a8f3ddf8
     name: service-foundry-builder
@@ -248,7 +258,7 @@ entries:
     version: 0.16.0
   - apiVersion: v2
     appVersion: 0.15.0
-    created: "2026-02-08T18:03:13.50399-08:00"
+    created: "2026-02-19T08:56:32.790894-08:00"
     description: A Helm chart for Kubernetes
     digest: f0143e1c62ccc23e5e6e9a64bd349e1a0177963a82304bb15b7295850b3b924a
     name: service-foundry-builder
@@ -258,7 +268,7 @@ entries:
     version: 0.15.0
   - apiVersion: v2
     appVersion: 0.14.0
-    created: "2026-02-08T18:03:13.503417-08:00"
+    created: "2026-02-19T08:56:32.79048-08:00"
     description: A Helm chart for Kubernetes
     digest: 681d572d20ea45f88f530653307c0ce88d71cbc6f3b5d9e5b2dc942b3b74f2ee
     name: service-foundry-builder
@@ -268,7 +278,7 @@ entries:
     version: 0.14.0
   - apiVersion: v2
     appVersion: 0.13.0
-    created: "2026-02-08T18:03:13.503007-08:00"
+    created: "2026-02-19T08:56:32.790045-08:00"
     description: A Helm chart for Kubernetes
     digest: 65953ff400d6f62a0150924ccb5eaa9a4d42b2e49a1209a6b676ddb6f0dec625
     name: service-foundry-builder
@@ -278,7 +288,7 @@ entries:
     version: 0.13.0
   - apiVersion: v2
     appVersion: 0.12.0
-    created: "2026-02-08T18:03:13.502427-08:00"
+    created: "2026-02-19T08:56:32.789641-08:00"
     description: A Helm chart for Kubernetes
     digest: adf9e65d0ef38d140e8a8032a7218fdf9f4b0b490c498753c8bf4c00ecb382dc
     name: service-foundry-builder
@@ -288,7 +298,7 @@ entries:
     version: 0.12.0
   - apiVersion: v2
     appVersion: 0.3.0
-    created: "2026-02-08T18:03:13.506188-08:00"
+    created: "2026-02-19T08:56:32.792817-08:00"
     description: A Helm chart for Kubernetes
     digest: 0e84e668d9724cfb1304b9129128070ef5a3440b398942b6936ff15af58b3ed9
     name: service-foundry-builder
@@ -298,7 +308,7 @@ entries:
     version: 0.3.0
   - apiVersion: v2
     appVersion: 0.2.0
-    created: "2026-02-08T18:03:13.505576-08:00"
+    created: "2026-02-19T08:56:32.792438-08:00"
     description: A Helm chart for Kubernetes
     digest: 11b49c1a44b8c8b294876037219b939a5c505cd11e9fe7675df019ed87b0ebb2
     name: service-foundry-builder
@@ -308,7 +318,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 0.1.11
-    created: "2026-02-08T18:03:13.497778-08:00"
+    created: "2026-02-19T08:56:32.78585-08:00"
     description: A Helm chart for Kubernetes
     digest: 86f24f654ec21e1c7c5f99bf4944c17c55ad0ed73704fa71d5ba948855def9d7
     name: service-foundry-builder
@@ -318,7 +328,7 @@ entries:
     version: 0.1.11
   - apiVersion: v2
     appVersion: 0.1.10
-    created: "2026-02-08T18:03:13.496864-08:00"
+    created: "2026-02-19T08:56:32.785452-08:00"
     description: A Helm chart for Kubernetes
     digest: ccecc13c28a5b69b8d17b1aa9424f2bc29d0101b303162f95e7fc11ced641c87
     name: service-foundry-builder
@@ -328,7 +338,7 @@ entries:
     version: 0.1.10
   - apiVersion: v2
     appVersion: 0.1.9
-    created: "2026-02-08T18:03:13.502012-08:00"
+    created: "2026-02-19T08:56:32.789232-08:00"
     description: A Helm chart for Kubernetes
     digest: 590da632a82e2e04e94a0839595e9777982425911c950e5ca09419693b609210
     name: service-foundry-builder
@@ -338,7 +348,7 @@ entries:
     version: 0.1.9
   - apiVersion: v2
     appVersion: 0.1.8
-    created: "2026-02-08T18:03:13.501329-08:00"
+    created: "2026-02-19T08:56:32.788853-08:00"
     description: A Helm chart for Kubernetes
     digest: 688241b80d504ec6e4ea15fb20bef873a543b04c5a518143ba50488269d12d7f
     name: service-foundry-builder
@@ -348,7 +358,7 @@ entries:
     version: 0.1.8
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2026-02-08T18:03:13.500813-08:00"
+    created: "2026-02-19T08:56:32.788445-08:00"
     description: A Helm chart for Kubernetes
     digest: 1690b908784a9315b1797ce8d56a374979fb770f61c8f86b385018dbbc760646
     name: service-foundry-builder
@@ -358,7 +368,7 @@ entries:
     version: 0.1.7
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2026-02-08T18:03:13.50041-08:00"
+    created: "2026-02-19T08:56:32.788025-08:00"
     description: A Helm chart for Kubernetes
     digest: 7d3730095fedfa4c91d15c5c3379c2fe684e2f460a7392984f3c329088f09d80
     name: service-foundry-builder
@@ -368,7 +378,7 @@ entries:
     version: 0.1.6
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2026-02-08T18:03:13.499905-08:00"
+    created: "2026-02-19T08:56:32.787346-08:00"
     description: A Helm chart for Kubernetes
     digest: 433da582154c2fa989de5876ac0d4da1406f0c2d0c06ef44a42ea099aa05da2a
     name: service-foundry-builder
@@ -378,7 +388,7 @@ entries:
     version: 0.1.5
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2026-02-08T18:03:13.499385-08:00"
+    created: "2026-02-19T08:56:32.786983-08:00"
     description: A Helm chart for Kubernetes
     digest: 1cd242bc6b2823a832d37b60dffb62509c21d93e41b20fff7a4688bd37ad9552
     name: service-foundry-builder
@@ -388,7 +398,7 @@ entries:
     version: 0.1.4
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2026-02-08T18:03:13.498839-08:00"
+    created: "2026-02-19T08:56:32.78661-08:00"
     description: A Helm chart for Kubernetes
     digest: 90657ce7bcd332cc78aa70f9c034e047565e8a6d6c8059f4a5cc6a558da41006
     name: service-foundry-builder
@@ -398,7 +408,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2026-02-08T18:03:13.498283-08:00"
+    created: "2026-02-19T08:56:32.786235-08:00"
     description: A Helm chart for Kubernetes
     digest: b878898d947292e3c33aa26c811f4f415d4bb689178d63c6e734d188950768e1
     name: service-foundry-builder
@@ -408,7 +418,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2026-02-08T18:03:13.495924-08:00"
+    created: "2026-02-19T08:56:32.784945-08:00"
     description: A Helm chart for Kubernetes
     digest: f2874068a503afdda02b67bc51bc3cd6b5e03c8fe6a0137cbc59c1b445d36c29
     name: service-foundry-builder
@@ -418,7 +428,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2026-02-08T18:03:13.495393-08:00"
+    created: "2026-02-19T08:56:32.784483-08:00"
     description: A Helm chart for Kubernetes
     digest: d39cabc49cc13e5c1840ab225db81d6fdd295d48b34aced64bc905b8b64cf209
     name: service-foundry-builder
@@ -429,9 +439,9 @@ entries:
   service-foundry-community:
   - apiVersion: v2
     appVersion: 0.4.0
-    created: "2026-02-08T18:03:13.511853-08:00"
+    created: "2026-02-19T08:56:32.79768-08:00"
     description: A Helm chart for Kubernetes
-    digest: 013d4559e2c446bc295471d942f49c3481ff1c7dd019ac73c6f77252b208fb58
+    digest: db759e31360bda08c5bec2a0dd5ec325589767e0942fd5f0ab6adbd1ddbf5cdf
     name: service-foundry-community
     type: application
     urls:
@@ -439,7 +449,7 @@ entries:
     version: 0.4.0
   - apiVersion: v2
     appVersion: 0.3.0
-    created: "2026-02-08T18:03:13.510957-08:00"
+    created: "2026-02-19T08:56:32.797262-08:00"
     description: A Helm chart for Kubernetes
     digest: 861ec3d44d760a6d7466a844b71b6722aed3968652ea2e1343444d9bec35ea8d
     name: service-foundry-community
@@ -449,7 +459,7 @@ entries:
     version: 0.3.0
   - apiVersion: v2
     appVersion: 0.2.0
-    created: "2026-02-08T18:03:13.510334-08:00"
+    created: "2026-02-19T08:56:32.796693-08:00"
     description: A Helm chart for Kubernetes
     digest: 04141814f3809471448fd3f732d08c5e1d7c68ce0c782c25d7f348dd8e1b7dd7
     name: service-foundry-community
@@ -459,7 +469,7 @@ entries:
     version: 0.2.4
   - apiVersion: v2
     appVersion: 0.2.0
-    created: "2026-02-08T18:03:13.509628-08:00"
+    created: "2026-02-19T08:56:32.79615-08:00"
     description: A Helm chart for Kubernetes
     digest: ec2fef07367204bceae7826d55dc79df7f446a6f101ea04bf3e3b08b24c3c235
     name: service-foundry-community
@@ -469,7 +479,7 @@ entries:
     version: 0.2.3
   - apiVersion: v2
     appVersion: 0.2.0
-    created: "2026-02-08T18:03:13.508941-08:00"
+    created: "2026-02-19T08:56:32.79556-08:00"
     description: A Helm chart for Kubernetes
     digest: 8429f5c6c112a68c1241bdaf4ffe22534f1a98de7456b807e793f6ad0c09290a
     name: service-foundry-community
@@ -479,7 +489,7 @@ entries:
     version: 0.2.2
   - apiVersion: v2
     appVersion: 0.2.0
-    created: "2026-02-08T18:03:13.508317-08:00"
+    created: "2026-02-19T08:56:32.794959-08:00"
     description: A Helm chart for Kubernetes
     digest: bd05316361edcd214c936540110bc9350b1ddcaf345786e6ea50a9409e2945b3
     name: service-foundry-community
@@ -489,7 +499,7 @@ entries:
     version: 0.2.1
   - apiVersion: v2
     appVersion: 0.2.0
-    created: "2026-02-08T18:03:13.507571-08:00"
+    created: "2026-02-19T08:56:32.794343-08:00"
     description: A Helm chart for Kubernetes
     digest: 1ce3f06d43de64e4e163ed04024d06ae432fa1e268e3ef3879d3d943bdb32914
     name: service-foundry-community
@@ -499,7 +509,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 0.2.0
-    created: "2026-02-08T18:03:13.506872-08:00"
+    created: "2026-02-19T08:56:32.793352-08:00"
     description: A Helm chart for Kubernetes
     digest: 57983094735042b5fbdfd772460b4d5034ca8b400075b88a5de929b7f9da1406
     name: service-foundry-community
@@ -510,9 +520,9 @@ entries:
   service-foundry-console:
   - apiVersion: v2
     appVersion: 0.16.0
-    created: "2026-02-08T18:03:13.515376-08:00"
+    created: "2026-02-19T08:56:32.801142-08:00"
     description: A Helm chart for Kubernetes
-    digest: baa1d088c4306ce1a40554c3c6cbb702c45e3d9984b8e7eb7d4f9a567347815c
+    digest: 5dcf9d918313744790582d35aac59305e26d378d06485f4518109a6fd91a6903
     name: service-foundry-console
     type: application
     urls:
@@ -520,7 +530,7 @@ entries:
     version: 0.16.0
   - apiVersion: v2
     appVersion: 0.15.0
-    created: "2026-02-08T18:03:13.51487-08:00"
+    created: "2026-02-19T08:56:32.800643-08:00"
     description: A Helm chart for Kubernetes
     digest: f278b5868b0650a13f0d40bdd84bea7bb10e6f6b62db2e60dd149485a6d6c7f5
     name: service-foundry-console
@@ -529,7 +539,7 @@ entries:
     - https://nsalexamy.github.io/helm-charts/service-foundry-console-0.15.0.tgz
     version: 0.15.0
   - apiVersion: v2
-    created: "2026-02-08T18:03:13.514238-08:00"
+    created: "2026-02-19T08:56:32.799989-08:00"
     description: A Helm chart for Kubernetes
     digest: 33c55b65f5bede771f50027c1e933a1350eea90f5d17b66beeb02c08c4b29ac6
     name: service-foundry-console
@@ -538,7 +548,7 @@ entries:
     - https://nsalexamy.github.io/helm-charts/service-foundry-console-0.14.2.tgz
     version: 0.14.2
   - apiVersion: v2
-    created: "2026-02-08T18:03:13.513448-08:00"
+    created: "2026-02-19T08:56:32.798952-08:00"
     description: A Helm chart for Kubernetes
     digest: 544c916f6fc36f7d4d7681e7a2f113706f0d46ec666e9c16434133c33c272555
     name: service-foundry-console
@@ -547,7 +557,7 @@ entries:
     - https://nsalexamy.github.io/helm-charts/service-foundry-console-0.14.1.tgz
     version: 0.14.1
   - apiVersion: v2
-    created: "2026-02-08T18:03:13.512594-08:00"
+    created: "2026-02-19T08:56:32.798336-08:00"
     description: A Helm chart for Kubernetes
     digest: 9f9c879c1aa4a8104e2891d14becf2371a72ecf62aac7149597cac69649f09e6
     name: service-foundry-console
@@ -555,4 +565,4 @@ entries:
     urls:
     - https://nsalexamy.github.io/helm-charts/service-foundry-console-0.14.0.tgz
     version: 0.14.0
-generated: "2026-02-08T18:03:13.483349-08:00"
+generated: "2026-02-19T08:56:32.775402-08:00"
