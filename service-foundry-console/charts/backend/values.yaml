@@ -134,10 +134,10 @@ volumes:
 # Additional volumeMounts on the output Deployment definition.
 #volumeMounts: []
 volumeMounts:
+  # gitops_id_rsa will be moved to ~/.ssh/id_rsa
   - name: github-ssh
-    mountPath: /opt/nsa2/service-foundry/ssh/id_rsa
-    subPath: argocd_id_rsa # make sure the file is named argocd_id_rsa NOT id_rsa
-    readOnly: false
+    mountPath: /opt/nsa2/service-foundry/ssh
+    readOnly: true  
   - name: service-foundry-license-file
     mountPath: /opt/nsa2/service-foundry/license
     readOnly: true
@@ -204,6 +204,8 @@ obiContainer:
     # Disables OBI instrumentation of services already instrumented with OpenTelemetry.
     - name: OTEL_EBPF_EXCLUDE_OTEL_INSTRUMENTED_SERVICES
       value: 'false'
+    - name: SSH_KEY_PATH
+      value: "/opt/nsa2/service-foundry/ssh/gitops_id_rsa"
     #- name: OTEL_EBPF_DISABLE_SDK_DETECTION
     #  value: 'true'  # disable auto-instrumentation detection to reduce overhead'
     #- name: OTEL_EBPF_HTTP_INJECT_TRACE_CONTEXT
